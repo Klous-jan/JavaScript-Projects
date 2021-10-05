@@ -1,2 +1,5 @@
 # JavaScript Projects
- JavaScript Projects for TTA
+This is a display of sample websites that i made using JavaScript.
+
+# Projects
+* (TBA)
