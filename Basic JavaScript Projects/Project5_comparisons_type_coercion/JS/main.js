@@ -1,7 +1,10 @@
 //step 1
-document.write(3);
+document.write(typeof 3);       // typeof Number
     document.write("<br>");     // Line Break
-    
+
+document.write(typeof "3");     // typeof String
+    document.write("<br>");     // Line Break
+
 //step 2
 document.write("19" + 7);
     document.write("<br>");     // Line Break
