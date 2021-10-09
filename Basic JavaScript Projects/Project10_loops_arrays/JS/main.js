@@ -6,7 +6,7 @@
 function Call_Loop() {
     var Digit = "";     // this will make it produce the numbers (x) - (while (x < y) "y being 20")
     var x = 1;          //  using the <br> tag it will put each number on its own line
-    while (x < 20)   {
+    while (x < 5)   {
         Digit += "<br>" + x;
         x++;
     }
