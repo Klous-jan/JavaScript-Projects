@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="JS/JavaScript_2.js" defer></script>
+    <link rel="stylesheet" href="./css/CSS_2.css">
+</head>
+<body style="background-color:darkslategray;">
+    <form name="myForm" action="./img/sub.png" onsubmit="return validateForm1() " method="post">
+    <div class="row">
+        <div class="column1" style="background-color:rgb(168, 168, 168)"> <!--Column 1-->
+            <label for="fnamelab">First Name:</label>
+            <label for="emaillab">Email:</label>
+        </div>
+        <div class="column2" style="background-color:rgb(168, 168, 168)"> <!--Column 2-->
+            <input type="text" name="fname" value="" placeholder="John">
+            <input type="text" name="email" value="" placeholder="John.doe@email.com">
+        </div>
+        <div class="column3" style="background-color:rgb(168, 168, 168);"> <!--Column 3-->
+            <label for="lnamelab">Last Name:</label>
+            <label for="pnumberlab">Phone Number:</label>
+        </div>
+        <div class="column4" style="background-color:rgb(168, 168, 168);"> <!--Column 4-->
+            <input type="text" name="lname" value="" placeholder="Doe">
+            <input type="text" name="pnum" value="" placeholder="555-555-5555">
+        </div>
+        <div class="submit1">
+            <input class="submit1" type="submit" value="Submit">
+        </div>
+    </form>
+    <br>
+    <br>
+
+
+
+    <h1>Characters</h1>
+    <h3>Click on a universe to see a character!</h3>
+
+    <ul>
+        <li onclick="displaytype(this)" id="DC"
+            data-character-type="Batman">DC</li>
+        <li onclick="displaytype(this)" id="Star Wars"
+            data-character-type="Luke">Star Wars</li>
+        <li onclick="displaytype(this)" id="Marvel"
+            data-character-type="Thor">Marvel</li>
+        <li onclick="displaytype(this)" id="Star Trek"
+            data-character-type="Picard">Star Trek</li>
+    </ul>
+
+</body>
+</html>
