@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Play Tic Tac Toe</title>
+    <title>Course Step Tracker</title>
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <script src="./JS/main.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">
-    <audio id="sound" src="./Media/Victory.mp3" preload="auto"></audio>
+    <audio id="Done" src="./Media/Victory.mp3" preload="auto"></audio>
+    <audio id="Mouse" src="./Media/Click.mp3" preload="auto"></audio>
 </head>
 
 <body id="body" style="background-color:darkslategray;">
-    <div class="center-container">
-        <!-- Start Header -->
-        <h1>Steps to Go</h1>
-        <div id="total">
-        </div>
-         <!-- End Header -->
+    <p>
+      </p>
+      <p>
+        Current Step: 
+        <input onfocus="this.value=''" type="text" id="currentStep" value="Step #001"oninput="onInput()"></input>
+        Goal: 
+        <input onfocus="this.value=''" type="text" id="FinalStep" value="Step #999"></input>
+        <input type="submit" value="Submit" onclick="TestDuo(); CurrentStep(); FinalStep()">
+      </p>
+      <p>Steps To Go:</p>
+      <p id="EndResult"></p>
 
-        <!--Start Click Input/Counter -->
-        <label for="StepCounter">Enter Steps</label>
-        <input type="text" id="steps" value="0" oninput="onInput()"></input>
-        <input type="submit" value="Submit" onclick="onClickzero()">
-        <!--End Click Input/Counter -->
+      <p>You are currently on Step: </p>
+      <p id="Current"></p>
+      <p>Out of </p>
+      <p id="Final"></p>
 
-        <!--Start Buttons -->
-        <div id="Images">
+    <!--Buttons-->
+    <!--Buttons-->
+    <!--Buttons-->
+      <div id="Images">
         <button class="centerup">
-        <img src="./img/arrowup.png" id="Imagetest"alt="" height="150" width="150" onclick="onClickplus()"/>
+        <img src="./img/arrowup.png" id="Imagetest" alt="" height="150" width="150" onclick="onClickplus(); play()"/>
         </button>
         <button class="centerdown">
-        <img src="./img/arrowdown.png" id="Imagetest" alt="" height="150" width="150"onclick="onClickminus()"/>
+        <img src="./img/arrowdown.png" id="Imagetest" alt="" height="150" width="150"onclick="onClickminus(); play()"/>
         </button>
         </div>
-        <!--Start Buttons -->
-        <p id="clicks"></p>
-    </div>
+    <!--Buttons-->
+    <!--Buttons-->
+    <!--Buttons-->
 </body>
 </html>
