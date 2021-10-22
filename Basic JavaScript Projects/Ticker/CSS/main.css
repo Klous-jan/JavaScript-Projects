@@ -2,16 +2,31 @@ h1  {
     text-align: center;
 }
 
-.centerup {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-  }
 
-.centerdown {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-  }
+button {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;        
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+}
+
+.Imagetest {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+#Images {
+  text-align: center;
+}
+
+
+
+

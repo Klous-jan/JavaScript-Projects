@@ -6,31 +6,34 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <script src="./JS/main.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">
+    <audio id="sound" src="./Media/Victory.mp3" preload="auto"></audio>
 </head>
 
 <body id="body" style="background-color:darkslategray;">
     <div class="center-container">
         <!-- Start Header -->
         <h1>Steps to Go</h1>
+        <div id="total">
+        </div>
          <!-- End Header -->
 
         <!--Start Click Input/Counter -->
         <label for="StepCounter">Enter Steps</label>
-        <input type="text" id="steps" value="">
-        <button onclick="steps()">Submit</button>
-        Clicks:<p id="clicks"></p>
+        <input type="text" id="steps" value="0" oninput="onInput()"></input>
+        <input type="submit" value="Submit" onclick="onClickzero()">
         <!--End Click Input/Counter -->
 
         <!--Start Buttons -->
-        <canvas width="608" height="200"></canvas>
+        <div id="Images">
         <button class="centerup">
-        <img src="./media/arrowup.png" alt="" height="150" width="150" onclick="onClickplus()"/>
+        <img src="./img/arrowup.png" id="Imagetest"alt="" height="150" width="150" onclick="onClickplus()"/>
         </button>
         <button class="centerdown">
-        <img src="./media/arrowdown.png" alt="" height="150" width="150"onclick="onClickminus()"/>
+        <img src="./img/arrowdown.png" id="Imagetest" alt="" height="150" width="150"onclick="onClickminus()"/>
         </button>
+        </div>
         <!--Start Buttons -->
-        
+        <p id="clicks"></p>
     </div>
 </body>
 </html>
