@@ -1,8 +1,9 @@
 #menuBG {
     width: 400px;
-    height: 500px;
+    height: auto;
     margin: 10px auto;
     background-color: white;
+    overflow: auto;
 }
 
 #frmMenu {
@@ -18,12 +19,6 @@
 }
 
 .left {
-    width: 200px;
-    height: 200px;
-    float: left;
-}
-
-.center {
     width: 200px;
     height: 200px;
     float: left;
@@ -70,4 +65,9 @@ h3 {
 div {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(33, 112, 230);
+}
+
+#spacer {
+    height: 20px;
+    width: 1px;
 }
